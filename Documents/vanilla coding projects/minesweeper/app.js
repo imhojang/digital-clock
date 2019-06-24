@@ -21,7 +21,7 @@ makeGame();
 document.getElementById("easy").addEventListener("click", function() {
   hor = 10;
   ver = 10;
-  mine = 1;
+  mine = 10;
   makeGame();
 });
 document.getElementById("normal").addEventListener("click", function() {

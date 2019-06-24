@@ -1,13 +1,13 @@
 body {
   background-color: #181818;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 button {
   background-color: #181818;
   color: whitesmoke;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h1 {
@@ -21,7 +21,7 @@ td {
   height: 14px;
   text-align: center;
   font-size: 0px;
-  background: url('sprite100.gif') 0px -39px;
+  background: url("sprite100.gif") 0px -39px;
 }
 
 table {
@@ -29,15 +29,14 @@ table {
 }
 
 td.opened {
-  
-  background: url('sprite100.gif') 0px -23px; 
+  background: url("sprite100.gif") 0px -23px;
 }
 td.flag {
-  background: url('sprite100.gif') -16px -39px;
+  background: url("sprite100.gif") -16px -39px;
 }
 
 td.question {
-  background: url('sprite100.gif') -80px -39px;
+  background: url("sprite100.gif") -80px -39px;
 }
 
 tbody {
@@ -52,21 +51,19 @@ tbody {
 .timer {
   width: 14px;
   height: 23px;
-  background: url('sprite100.gif') 0px 0px;
+  background: url("sprite100.gif") 0px 0px;
   display: inline-block;
 }
 h1 {
   display: inline-block;
 }
 
- #menuboard {
+#menuboard {
   margin: 0 auto;
   width: 170px;
   text-align: center;
 }
 
-#table { 
+#table {
   display: inline-block;
 }
-
-
