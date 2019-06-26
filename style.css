@@ -1,6 +1,17 @@
 #myclock, .buttons, #mydate{
   border: 2px green solid;
 }
+
+#backBtn {
+  color: whitesmoke;
+  font-size: 13.5px;
+  float: left;
+  position: fixed;
+  left: 9px;
+  top: 8px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 #myclock {
   margin-top: 100px;
   margin-bottom: 0px;
