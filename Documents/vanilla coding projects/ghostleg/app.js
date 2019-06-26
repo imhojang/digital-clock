@@ -58,16 +58,16 @@ function drawThisOne(event) {
     addToResult(event, result, color);
     resultsDisplayed--;
   }
-  if (resultsDisplayed === 0) {
-    resultBtn.style.display = "block";
-    resultBtn.addEventListener("click", resultBtnFxn);
-  }
 }
 
 function resultBtnFxn() {
-  alert(`Scroll down to see your result\n페이지 하단의 결과를 확인하세요`);
+  document.querySelectorAll(".player").forEach(function(v) {
+    v.click();
+  });
   resultBtn.parentElement.removeChild(resultBtn);
   $resultContainer.style.display = "block";
+  drawBaseLine();
+  alert(`Scroll down to see your result\n페이지 하단의 결과를 확인하세요`);
 }
 
 function addToResult(event, result, color) {
@@ -116,6 +116,8 @@ function addNextButton() {
       addClickEventToInputs();
       readOnlyInput();
       $canvasContainer.removeChild(nextBtn);
+      resultBtn.style.display = "block";
+      resultBtn.addEventListener("click", resultBtnFxn);
     }
   });
 }
@@ -217,7 +219,7 @@ var colorArr = [
 
 function setNumLadder() {
   if (numPlayers <= 3) {
-    numRandomLadders = 3;
+    numRandomLadders = 4;
   } else if (numPlayers === 4 && numPlayers === 5) {
     numRandomLadders = 3;
   } else numRandomLadders = 3;
@@ -264,7 +266,8 @@ function generateRandomCrossPoints() {
       // push random cross points into randomCrossPointArrays from above.
       for (let j = 0; j < numRandomLadders; j++) {
         // randomCrossPoint should be between 125 and 670
-        let randomCrossPoints = Math.floor(Math.random() * 550) + 125;
+        let randomCrossPoints =
+          Math.floor(Math.random() * 300 + Math.random() * 300) + 100;
         randomCrossPointArrays[i].push(randomCrossPoints);
         randomCrossPointArrays[i + 1].push(randomCrossPoints);
       }

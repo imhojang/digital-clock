@@ -4,6 +4,14 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+
+#zoom {
+  margin: 0 auto;
+  zoom: 1.7;
+  -moz-transform: scale(1.7);
+  -moz-transform-origin: 800px 0px;
+}
+
 button {
   background-color: #181818;
   color: whitesmoke;
@@ -60,7 +68,7 @@ h1 {
 
 #menuboard {
   margin: 0 auto;
-  width: 170px;
+  width: 165px;
   text-align: center;
 }
 
