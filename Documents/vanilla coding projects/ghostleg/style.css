@@ -4,6 +4,16 @@ body {
   margin: 0;
 }
 
+#backBtn {
+  color: whitesmoke;
+  font-size: 13.5px;
+  float: left;
+  position: fixed;
+  left: 9px;
+  top: 8px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 h1 {
   margin: 0 auto;
   width: 200px;

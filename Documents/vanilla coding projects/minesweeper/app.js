@@ -49,6 +49,7 @@ function makeGame() {
 
 
   // random mine location
+
   // Array().fill().map() 3 combo to create an array of numbers
   var candidates = Array(hor * ver)
     .fill()
@@ -59,10 +60,7 @@ function makeGame() {
   //fisher yates shuffle to shuffle the numbers in array created above
   var shuffle = [];
   while (candidates.length > hor * ver - mine) {
-    var tempVal = candidates.splice(
-      Math.floor(Math.random() * candidates.length),
-      1
-    )[0];
+    var tempVal = candidates.splice(Math.floor(Math.random() * candidates.length), 1)[0];
     shuffle.push(tempVal);
   }
 

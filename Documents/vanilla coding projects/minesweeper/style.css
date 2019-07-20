@@ -4,6 +4,13 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+#backBtn {
+  color: whitesmoke;
+  font-size: 8px;
+  float: left;
+  position: fixed;
+  left: 5px;
+}
 
 #zoom {
   margin: 0 auto;
